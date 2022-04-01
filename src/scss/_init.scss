@@ -47,19 +47,8 @@ body {
 	outline: 1px solid color(dark);
 }
 
-// ::selection {
-// 	background: color(primary);
-// 	color: color(white);
-// }
-
-// ::-moz-selection {
-// 	background: color(primary);
-// 	color: color(white);
-// }
-
 :focus {
-	outline: 1px solid color(dark);
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	outline: 1px solid rgba(0,0,0,0.5);
 }
 
 a {
@@ -96,8 +85,4 @@ img {
 
 button{
 	cursor: pointer;
-}
-
-fieldset{
-	border: none;
 }

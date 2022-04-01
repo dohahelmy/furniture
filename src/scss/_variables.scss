@@ -1,7 +1,8 @@
 /* ========== Colors ========== */
 $light:#FFFFFF;
 $grey: #EDEEF5;
-$dark: #FDAF40;
+$dark: #414141;
+$accent: #FDAF40;
 
 
 @function color($name) {
@@ -9,9 +10,10 @@ $dark: #FDAF40;
 }
 
 :root {
-  --color-light:#FFFFFF;
+  --color-light: #FFFFFF;
   --color-grey: #EDEEF5;
-  --color-dark: #FDAF40;
+  --color-dark: #414141;
+  --color-accent: #FDAF40;
 }
 
 /* ========== Fonts ========== */
@@ -21,6 +23,7 @@ $dark: #FDAF40;
   src: url("../fonts/HelveticaNeueLT.otf");
   font-weight: 500;
 }
+
 @font-face {
   font-family: "HelveticaNeueLT";
   src: url("../fonts/HelveticaNeueLT_B.otf");

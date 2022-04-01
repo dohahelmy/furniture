@@ -4,15 +4,6 @@ header {
     z-index: 1;
     height: 40rem;
 
-    // &::after {
-    //     z-index: 0;
-    //     content: '';
-    //     position: absolute;
-    //     inset: 0;
-    //     background-color: color(dark);
-    //     opacity: 0.6;
-    // }
-
     .container {
         display: grid;
         height: 100%;
@@ -39,6 +30,8 @@ header {
 
     .btn {
         width: 10rem;
+        color: color(accent);
+        background-color: color(light);
     }
 }
 

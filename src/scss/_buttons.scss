@@ -5,13 +5,14 @@
   justify-content: center;
   border: none;
   min-width: 6rem;
-  border-radius: 4rem;
-  font-size: 1.6rem;
+  border-radius: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   text-align: center;
   padding-bottom: 0.5rem;
   letter-spacing: 1px;
   position: relative;
+  height: 5.2rem;
 
   span {
     font-weight: 700;
@@ -23,7 +24,6 @@
     left: -1px;
   }
 
-
   &-dark {
     color: color(light);
     background-color: color(dark);
@@ -34,18 +34,9 @@
     background-color: color(light);
   }
 
-}
-
-.tab {
-  min-width: 11rem;
-  padding: 0 1.25rem;
-  height: 3.5rem;
-  font-size: 1.4rem;
-  border-radius: 0.75rem;
-  border: 1px solid color(dark);
-
-  &.active {
+  &-accent {
     color: color(light);
-    background-color: color(dark);
+    background-color: color(accent);
   }
+
 }

@@ -5,10 +5,6 @@
 	width: 100%;
 	margin: 0 auto;
 
-	// @media (min-width: $phones) {
-	// 	max-width: 54rem;
-	// }
-
 	@media (min-width: $tablets) {
 		max-width: 75rem;
 	}
@@ -16,82 +12,12 @@
 	@media (min-width: $desktops) {
 		max-width: 96rem;
 	}
-
-	// @media (min-width: $HD) {
-	// 	max-width: 114rem;
-	// }
-}
-
-// colors
-.is-primary {
-	color: color(primary);
-}
-
-.is-dimmed {
-	color: color(grey);
-}
-
-.is-white {
-	color: color(white);
-}
-
-.bg-gray {
-	background-color: rgba(46, 49, 146, 0.05);
-}
-
-.bg-primary {
-	background-color: color(primary);
-}
-
-// Fonts
-.fBold {
-	font-weight: 700;
-}
-
-.fRegular {
-	font-weight: 400;
-}
-
-.f14 {
-	font-size: 1.4rem;
 }
 
 .text-center {
 	text-align: center;
 }
 
-.show {
-	display: block;
-}
-
-/* ========== General styles ========== */
-.relative {
-	position: relative;
-	z-index: 0;
-}
-
-.back_line {
-	position: relative;
-	z-index: 0;
-
-	&:before,
-	&:after {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		width: 2rem;
-		height: 0.1px;
-		background-color: color(dark);
-		top: 56%;
-		transform: translateY(-50%);
-	}
-	&:before{
-		left: 100%;
-	}
-	&:after{
-		right: 100%;
-	}
-}
 
 /* ========== FlexBox Classes ========== */
 .flex {
@@ -131,33 +57,4 @@
 
 .flex-shrink-0 {
 	flex-shrink: 0;
-}
-
-/* ========== Style SVG ========== */
-.resize-svg {
-	width: 2.4rem;
-	height: 2.4rem;
-}
-
-.title-icon {
-	width: 2.8rem;
-	height: 2.8rem;
-}
-
-.accent-svg {
-	height: 22.4rem;
-}
-
-.svg-fill {
-	&-white {
-		fill: color(white);
-	}
-
-	&-dark {
-		fill: color(dark);
-	}
-
-	&-light {
-		fill: color(light);
-	}
 }

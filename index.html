@@ -1,12 +1,68 @@
 @@include(
-'./includes/0_header.html',
+'./includes/header.html',
 {"webRoot": ".",
 "document-title": "أثاث",
 "page-id": "home"}
 )
 
 
-@@include('./includes/1_latestoffers.html', {"webRoot": "."})
+<section class="section">
+  <div class="title_container">
+    <h2 class="title">أحدث العروض</h2>
+  </div>
+  <section class="container">
+    @@for (var i = 0; i < 3; i++){ 
+      <a href="@@webRoot/offers.html" class="banner">
+        <div class="img">
+          <img src="@@webRoot/assets/img/IMG_`+i+`.png"alt="banner`+i+`-title">
+        </div>
+      </a>
+    }
+  </section>
+</section>
+
+
+<section class="section">
+  <div class="title_container">
+    <h2 class="title">الخصومات</h2>
+  </div>
+  <section class="container ">
+    <div class="owl-carousel">
+      @@for (var i = 0; i < 7; i++){ 
+        <div class="discount_item">
+          <div class="img">
+            <img src="@@webRoot/assets/img/logo-placeholder.png" alt="logo`+i+`">
+          </div>
+          <a href="" class="btn btn-accent">عرض</a>
+        </div>
+      }
+    </div>
+  </section>
+</section>
+
+
+<section class="section">
+  <div class="title_container">
+    <h2 class="title">أفكار للتصميم</h2>
+  </div>
+  <section class="container ">
+    <div class="owl-carousel">
+      @@for (var i = 0; i < 6; i++){ 
+        <div class="design_item">
+          <div class="design_img">
+            <div class="img">
+              <img src="@@webRoot/assets/img/samples/`+i+`.png" alt="image`+i+`">
+            </div>
+          </div>
+          <p>تصميم صالة كبيرة</p>
+        </div>
+      }
+    </div>
+  </section>
+</section>
+
+
+@@include('./includes/posts.html', {"webRoot": "."})
 
 
 @@include('./includes/scripts.html', {"webRoot": "."})
