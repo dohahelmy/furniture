@@ -12,11 +12,13 @@
   src: url("../fonts/HelveticaNeueLT.otf");
   font-weight: 500;
 }
+
 @font-face {
   font-family: "HelveticaNeueLT";
   src: url("../fonts/HelveticaNeueLT_B.otf");
   font-weight: 700;
 }
+
 /* ========== Initialize setup ========== */
 *,
 *::after,
@@ -34,6 +36,7 @@ html {
   direction: rtl;
   scroll-behavior: smooth;
 }
+
 @media (max-width: 37.5em) {
   html {
     font-size: 44%;
@@ -50,6 +53,7 @@ body {
   overflow-x: hidden;
   line-height: 2;
 }
+
 body.active {
   overflow: hidden;
 }
@@ -90,9 +94,9 @@ h6 {
   font-weight: 700;
   margin: 0;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 ul,
@@ -105,9 +109,9 @@ ol {
 img {
   pointer-events: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 button {
@@ -121,11 +125,13 @@ button {
   width: 100%;
   margin: 0 auto;
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 75rem;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     max-width: 96rem;
@@ -192,21 +198,27 @@ button {
   position: relative;
   height: 5.2rem;
 }
+
 .btn span {
   font-weight: 700;
 }
-.btn:focus, .btn:hover {
+
+.btn:focus,
+.btn:hover {
   top: -1px;
   left: -1px;
 }
+
 .btn-dark {
   color: var(--color-light);
   background-color: var(--color-dark);
 }
+
 .btn-light {
   color: var(--color-dark);
   background-color: var(--color-light);
 }
+
 .btn-accent {
   color: var(--color-light);
   background-color: var(--color-accent);
@@ -218,6 +230,7 @@ header {
   z-index: 1;
   height: 40rem;
 }
+
 header .container {
   display: grid;
   height: 100%;
@@ -229,11 +242,12 @@ header .container {
   height: 5.85rem;
   width: 5.7rem;
 }
+
 .logo img {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .nav {
@@ -241,6 +255,7 @@ header .container {
   z-index: 4;
   margin-top: 3rem;
 }
+
 .nav .btn {
   width: 10rem;
   color: var(--color-accent);
@@ -253,6 +268,7 @@ header .container {
   align-self: end;
   margin-bottom: 3rem;
 }
+
 .search input[type=search] {
   font-size: 1.6rem;
   width: 100%;
@@ -264,9 +280,11 @@ header .container {
   background-position: 98% center;
   padding: 1rem 6rem;
 }
+
 .search input[type=search]:focus {
   outline: 2px solid #ecc412;
 }
+
 .search input[type=submit] {
   width: 2rem;
   height: 2rem;
@@ -286,10 +304,12 @@ header .container {
   opacity: 0;
   pointer-events: none;
 }
+
 .modal.active {
   opacity: 1;
   pointer-events: auto;
 }
+
 .modal-dialog {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
@@ -297,6 +317,7 @@ header .container {
   display: grid;
   place-items: center;
 }
+
 .modal-body {
   max-width: 40rem;
   width: 100%;
@@ -305,6 +326,7 @@ header .container {
   background-color: var(--color-light);
   box-shadow: 0 0 10px black;
 }
+
 .modal-header {
   text-align: center;
   padding: 4rem;
@@ -315,27 +337,33 @@ header .container {
   display: grid;
   place-items: center;
 }
+
 .modal-header .logo {
   width: 20rem;
   height: 6rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
+
 .modal-header .desc {
   margin-top: 1rem;
   opacity: 0.65;
 }
+
 .modal-content {
   padding: 4rem;
   border-end-start-radius: 1.25rem;
   border-end-end-radius: 1.25rem;
 }
+
 .modal-content form label {
   font-weight: 700;
 }
+
 .modal-content form .btns {
   margin: 2.6rem -0.5rem 0;
 }
+
 .modal-content form .btn {
   flex-grow: 1;
   margin: 0 0.5rem;
@@ -345,29 +373,34 @@ header .container {
   display: inline-flex;
   align-items: center;
   -webkit-margin-end: 3rem;
-          margin-inline-end: 3rem;
+  margin-inline-end: 3rem;
   margin-bottom: 1rem;
 }
+
 .radio-input label {
   font-weight: 500 !important;
 }
+
 .radio-input [type=radio] {
   margin-top: 0.3rem;
   -webkit-margin-end: 0.5rem;
-          margin-inline-end: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
+
 .radio-input:last-child {
   -webkit-margin-end: 0;
-          margin-inline-end: 0;
+  margin-inline-end: 0;
 }
 
 .input-box {
   margin-bottom: 1.6rem;
 }
+
 .input-box label {
   display: inline-block;
   margin-bottom: 0.8rem;
 }
+
 .input-box input {
   width: 100%;
   padding: 0.25rem 1rem;
@@ -387,6 +420,7 @@ header .container {
   z-index: 0;
   margin-bottom: 2.85rem;
 }
+
 .title_container::before {
   content: "";
   position: absolute;
@@ -398,6 +432,7 @@ header .container {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .title_container .title {
   font-size: 2.5rem;
   display: inline-block;
@@ -411,16 +446,19 @@ header .container {
   position: relative;
   display: block;
 }
+
 .banner::before {
   content: "";
   display: block;
   padding-top: 33.4%;
 }
+
 .banner .img {
   position: absolute;
   inset: 0;
   overflow: hidden;
 }
+
 .banner .img img {
   min-height: 100%;
   width: 100%;
@@ -430,7 +468,24 @@ header .container {
   padding: 3rem;
   border-radius: 3rem;
   background-color: #EEEEFF;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
 }
+
+.discount_item .offer {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 15%;
+  left: 15%;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-light);
+  background-color: #e52648;
+  transform: translate(-45%, -50%) rotate(-45deg);
+}
+
 .discount_item .img {
   display: grid;
   place-items: center;
@@ -439,12 +494,14 @@ header .container {
   border-radius: 3rem;
   background-color: #AFAFAF;
 }
+
 .discount_item .img img {
   width: 50%;
   height: 50%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
+
 .discount_item .btn {
   width: 100%;
 }
@@ -452,6 +509,7 @@ header .container {
 .design_item {
   text-align: center;
 }
+
 .design_item p {
   font-weight: 700;
 }
@@ -460,11 +518,13 @@ header .container {
   height: auto;
   position: relative;
 }
+
 .design_img::before {
   content: "";
   display: block;
   padding-top: 107.3%;
 }
+
 .design_img::after {
   content: "";
   position: absolute;
@@ -472,17 +532,19 @@ header .container {
   background-color: rgba(157, 157, 157, 0.36);
   border-radius: 3rem;
 }
+
 .design_img .img {
   position: absolute;
   inset: 0;
   overflow: hidden;
   border-radius: 3rem;
 }
+
 .design_img .img img {
   min-height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .owl-stage {
@@ -498,20 +560,24 @@ header .container {
   flex-wrap: wrap;
   margin: -2rem;
 }
+
 .posts .post {
   margin: 2rem 0;
   padding: 0 2rem;
   width: 50%;
 }
+
 .posts .post .post_img {
   height: auto;
   position: relative;
 }
+
 .posts .post .post_img::before {
   content: "";
   display: block;
   padding-top: 68.63%;
 }
+
 .posts .post .post_img::after {
   content: "";
   position: absolute;
@@ -519,20 +585,24 @@ header .container {
   background-color: rgba(157, 157, 157, 0.36);
   border-radius: 3rem;
 }
+
 .posts .post .post_img .img {
   position: absolute;
   inset: 0;
   overflow: hidden;
   border-radius: 3rem;
 }
+
 .posts .post .post_img .img img {
   min-height: 100%;
   width: 100%;
 }
+
 .posts .post img {
   width: 100%;
   height: 15rem;
 }
+
 .posts .post a {
   display: block;
   color: var(--color-dark);
@@ -544,19 +614,22 @@ header .container {
 .back-btn {
   margin-bottom: 3rem;
 }
+
 .back-btn a {
   display: inline-flex;
   align-items: end;
 }
+
 .back-btn a img {
   margin-bottom: 0.5rem;
 }
+
 .back-btn a span {
   display: inline-block;
   font-weight: 700;
   color: #12A89D;
   -webkit-margin-start: 1rem;
-          margin-inline-start: 1rem;
+  margin-inline-start: 1rem;
 }
 
 .post_content .content_title {
@@ -565,10 +638,12 @@ header .container {
   padding: 0 2rem;
   margin-bottom: 3rem;
 }
+
 .post_content .content_img {
   position: relative;
   z-index: 0;
 }
+
 .post_content .content_img::after {
   content: "";
   position: absolute;
@@ -576,12 +651,14 @@ header .container {
   background-color: rgba(157, 157, 157, 0.36);
   border-radius: 3rem;
 }
+
 .post_content .content_img img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 3rem;
 }
+
 .post_content .content_text {
   line-height: 2.7;
   margin-top: 3rem;
