@@ -705,6 +705,7 @@ header .container {
   border-radius: 3rem;
 }
 
+.post_content img ,
 .post_content .content_img img {
   display: block;
   width: 100%;
@@ -714,6 +715,6 @@ header .container {
 
 .post_content .content_text {
   line-height: 2.7;
-  margin-top: 3rem;
+  margin: 3rem 0;
   font-size: 1.8rem;
 }
